@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Part4.css">
+</head>
+
+<body>
+    For more information: (<a href="Part1.html">Part1</a>) (<a href="Part2.html">Part2</a>) (<a href="Part3.html">Part3</a>) Part 4: - [Lists](<a href="#Lists">Lists</a>) - [Referencing issues and pull requests](<a href="#Referencing issues and pull requests">Referencing issues and pull requests</a>)
+    - [Ignoring Markdown formatting](<a href="#Ignoring Markdown formatting">Ignoring Markdown formatting</a>)
+
+    <div class="Lists">
+        <h2>Lists</h2>
+    </div>
+
+    <h3>Unordored List</h3>
+
+    By preceding one or more lines of text with - or *. >
+    <ul>
+        <li>George Washington</li>
+        <li>John Adams</li>
+        <li>Thomas Jefferson</li>
+    </ul>
+    - George Washington - John Adams - Thomas Jefferson
+
+    <h3>Ordered List</h3>
+
+    By preceding each line with a number.
+    <ol>
+        <li>James Madison</li>
+        <li>James Monroe</li>
+        <li>John Quincy Adams</li>
+    </ol>
+    1. James Madison 2. James Monroe 3. John Quincy Adams
+
+    <h3>Nested List</h3>
+
+    To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Atom,you can align your list visually. Type space characters in front of your nested list item, until the list marker character (- or *) lies directly
+    below the first character of the text in the item above it. ``` 1. First list item - First nested list item - Second nested list item ```
+    <blockquote>
+        <ol>
+            <li>First list item
+                <ul>
+                    <li>First nested list item</li>
+                    <li>Second nested list item</li>
+                </ul>
+            </li>
+        </ol>
+    </blockquote>
+
+    <ol>
+        <li>First list item
+            <ul>
+                <li>First nested list item</li>
+                <li>Second nested list item</li>
+            </ul>
+        </li>
+    </ol>
+
+    To create a nested list in the comment editor on GitHub, which doesn't use a monospaced font, you can look at the list item immediately above the nested list and count the number of characters that appear before the content of the item. Then type that
+    number of space characters in front of the nested list item. In this example, you could add a nested list item under the list item 100. First list item by indenting the nested list item a minimum of five spaces, since there are five characters (100.)
+    before First list item.
+    <blockquote>
+        <ol start="100">
+            <li>First list item
+                <ul>
+                    <li>
+                        First nested list item
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </blockquote>
+    <ol start="100">
+        <li>First list item
+            <ul>
+                <li>
+                    First nested list item
+                </li>
+            </ul>
+        </li>
+    </ol>
+    You can create multiple levels of nested lists using the same method. For example, because the first nested list item has seven spaces (␣␣␣␣␣-␣) before the nested list content First nested list item, you would need to indent the second nested list item
+    by seven spaces.
+    <blockquote>
+        <ol start="100">
+            <li>First list item
+                <ul>
+                    <li>First nested list item
+                        <ul>
+                            <li>
+                                Second nested list item
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </blockquote>
+    <ol start="100">
+        <li>First list item
+            <ul>
+                <li>First nested list item
+                    <ul>
+                        <li>
+                            Second nested list item
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="Referencing issues and pull requests">
+        <h2>Referencing issues and pull requests</h2>
+    </div>
+
+    You can bring up a list of suggested issues and pull requests within the repository by typing #. Type the issue or pull request number or title to filter the list, and then press either tab or enter to complete the highlighted result. For more information,
+    see [Autolinked references and URLs](
+    <a href="https://help.github.com/en/articles/autolinked-references-and-urls">https://help.github.com/en/articles/autolinked-references-and-urls</a>).
+
+    <div class="Ignoring Markdown formatting">
+        <h3>Ignoring Markdown formatting</h3>
+    </div>
+
+    You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
+    <blockquote>
+        Let's rename \*our-new-project\* to \*our-old-project\*.
+    </blockquote>
+    Let's rename \*our-new-project\* to \*our-old-project\*.
+</body>
+
+</html>
